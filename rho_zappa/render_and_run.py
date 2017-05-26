@@ -17,15 +17,10 @@ def extract_env_variables(filename):
 
 
 def generate_command(deploy_cmd, deploy_env):
-    """ Validate the command and destination envirionments, generate zappa cmd
+    """ Generate zappa command string.
+
+        Possibly do validation here in the future.
     """
-    available_commands = ('deploy', 'undeploy', 'update')
-    available_environments = ('dev', 'dev2', 'stag', 'prod')
-    if deploy_cmd not in available_commands\
-            or deploy_env not in available_environments:
-        print("Must provide command {0} and environment {1}"
-              .format(available_commands, available_environments))
-        exit()
     return "zappa" + " " + deploy_cmd + " " + deploy_env
 
 

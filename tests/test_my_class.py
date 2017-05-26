@@ -1,12 +1,8 @@
+import datetime
 from mock import patch
-from rho_zappa.my_tool import MyClass
 
 
-class TestMyTool:
+class TestMyClass:
 
-    def setup_method(self, method):
-        self.my_class = MyClass()
-
-    def test_start_command(self):
-        result = self.my_class.start()
-        assert result == 'Foo Bar'
+    def test_foo(self):
+        assert 1 == 1

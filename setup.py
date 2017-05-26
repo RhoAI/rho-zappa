@@ -66,7 +66,7 @@ setup(
     tests_require=[
         'coverage==4.0a5',
         'mock==1.0.1',
-        'pytest==2.7.1'
+        'tox==2.3.1'
     ],
     cmdclass={'test': PyTest}
 )

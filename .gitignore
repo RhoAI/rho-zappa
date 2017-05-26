@@ -6,7 +6,9 @@
 # Distribution and deployment
 *.egg-info/
 *.egg
+.eggs/
 dist
+.tox/
 
 # Ignore environment files
 .env*
